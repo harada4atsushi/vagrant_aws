@@ -1,0 +1,28 @@
+DEPENDENCIES
+  mysql
+  passenger_apache2
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 0a3018634bafe58ad21c6ee271af015220e444b9
+  ruby_build
+  vim
+
+GRAPH
+  apache2 (1.10.4)
+    iptables (>= 0.0.0)
+    logrotate (>= 0.0.0)
+    pacman (>= 0.0.0)
+  build-essential (2.0.2)
+  iptables (0.13.2)
+  java (1.22.0)
+  logrotate (1.5.0)
+  mysql (5.2.12)
+  pacman (1.1.1)
+  passenger_apache2 (2.2.0)
+    apache2 (>= 1.0.4)
+    build-essential (>= 0.0.0)
+  rbenv (0.7.3)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  ruby_build (0.8.0)
+  vim (1.1.2)
