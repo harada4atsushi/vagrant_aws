@@ -17,6 +17,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     aws.instance_type = "t1.micro" # microインスタンス
     aws.security_groups = ["https", "ssh"] # 割り当てるセキュリティグループ
     aws.elastic_ip = true # 自動的にElastic IPを取得して割り当てる
+    aws.tags = { 
+      'Name' => 'redmine'
+    }
 
     # tty以外のsudoを許可
     aws.user_data = <<-EOH
